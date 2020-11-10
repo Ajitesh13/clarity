@@ -1,1 +1,1 @@
-web: cd backend && uvicorn main:app
+web: cd backend && pip install -r requirements.txt && uvicorn main:app
