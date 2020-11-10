@@ -7,10 +7,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from nanoid import generate
 import databases
 
-host_server = os.environ.get('host_server', "localhost")
+host_server = os.environ.get('host_server', "35.200.146.105")
 db_server_port = urllib.parse.quote_plus(str(os.environ.get('db_server_port', '5432')))
 # credentials of the postgres db instance:
-database_name = os.environ.get('database_name', 'fastapidbname')
+database_name = os.environ.get('database_name', 'postgres')
 db_username = urllib.parse.quote_plus(str(os.environ.get('db_username', 'postgres')))
 db_password = urllib.parse.quote_plus(str(os.environ.get('db_password', 'password')))
 DATABASE_URL = 'postgresql://{}:{}@{}:{}/{}'.format(
