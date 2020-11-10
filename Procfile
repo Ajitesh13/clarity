@@ -1,0 +1,1 @@
+web: cd backend && uvicorn main:app
