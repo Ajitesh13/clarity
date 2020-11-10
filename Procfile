@@ -1,1 +1,1 @@
-web: cd backend && pip3 install -r requirements.txt && uvicorn main:app
+web: cd backend && source env/bin/activate && pip install -r requirements.txt && uvicorn main:app
